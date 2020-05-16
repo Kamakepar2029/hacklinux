@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kama Kepar Linux</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="menu-item"><a href="#follow">FOLLOW</a></div>
+      <div class="menu-item"><a href="#download">DOWNLOAD</a></div>
+      <div class="menu-item"><a href="#about">ABOUT</a></div>
+      <div class="menu-item"><a href="#devops">DEVELOPERS</a></div>
+    </div>
+    <div id="follow">
+    <p class="title">This project will be soon hosted on GitHub</p>
+    <br>
+    <p class="content">You can follow me on <a href="https://github.com/Kamakepar2029/hacklinux">GitHub</a></p>
+    </div>
+    <div id="download">
+      <p class="title">Download Iso File</p>
+      <p>You can download only x32 version, but it is optimized</p>
+      <a href="#">Download</a>
+    </div>
+    <div id="about">
+
+    </div>
+    <div id="developers">
+
+    </div>
+    <div id="devops">
+      <h3>Contact the developers</h3>
+      <form action="/send" method="GET">
+      <div class="form">
+        <input class="input" type="email" placeholder="mail@example.com"><br/>
+        <input class="input-btn" type="submit" value="Approve"><br>
+      </div>
+      </form>
+    </div>
+    <style>
+      body{
+  margin:0px;
+}
+.header{
+  box-shadow: 0 0 12px #bbb;
+  display: flex;
+  padding-top:20px;
+  padding-bottom:20px;
+  width:100%;
+  justify-content: space-around;
+  background:white;
+}
+.menu{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.menu-item a{
+  text-decoration: none;
+  color:rgb(255, 174, 0);
+  padding:10px 5px;
+  border-radius:5px;
+  transition:1s;
+  
+}
+.menu-item a:hover{
+  transition:1s;
+  padding:10px 5px;
+  color:white;
+  background:rgb(255, 174, 0);
+}
+.form{
+  display: flex;
+}
+.input{
+  width:100%;
+  padding:10px 0px;
+  border-radius:5px;
+  border:1px solid rgb(255, 174, 0);
+}
+.input-btn{
+  border:1px solid rgb(255, 174, 0);
+  background:rgb(255, 174, 0);
+  border-radius:5px;
+  color:white;
+  width:100px;
+}
+.input-btn:hover{
+  background:white;
+  color:rgb(255, 174, 0);
+}
+#follow{
+  display:none;
+  flex-direction:column;
+  content:hello;
+}
+#download{
+  display:none;
+}
+#about{
+  display:none;
+}
+#developers{
+  display:none;
+}
+#follow:target{
+   margin-top:20px;
+  display:flex;
+}
+.title{
+  font-size:20px;
+}
+#download:target{
+  display:flex;
+  flex-direction:column;
+}
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>
